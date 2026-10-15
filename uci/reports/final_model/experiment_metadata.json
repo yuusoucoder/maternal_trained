@@ -1,0 +1,76 @@
+{
+    "project": "AIOVY",
+    "notebook": "03_uci_nested_cv_and_shap.ipynb",
+    "experiment": "UCI final Random Forest evaluation and SHAP analysis",
+    "created_at_utc": "2026-10-15T20:13:38.034481+00:00",
+    "dataset": "Maternal_Health_Risk_no_duplicates.csv",
+    "dataset_records": 451,
+    "training_records": 359,
+    "test_records": 92,
+    "features": [
+        "Age",
+        "SystolicBP",
+        "DiastolicBP",
+        "BS",
+        "BodyTemp",
+        "HeartRate"
+    ],
+    "classes": [
+        "high risk",
+        "low risk",
+        "mid risk"
+    ],
+    "label_mapping": {
+        "high risk": 0,
+        "low risk": 1,
+        "mid risk": 2
+    },
+    "model": "Random Forest",
+    "selected_hyperparameters": {
+        "model__n_estimators": 300,
+        "model__min_samples_leaf": 4,
+        "model__max_depth": 12,
+        "model__class_weight": "balanced"
+    },
+    "smote_used": false,
+    "split": {
+        "method": "StratifiedGroupKFold(n_splits=5, shuffle=True), first fold = locked test",
+        "test_size": 0.2,
+        "random_state": 42,
+        "group_overlap": 0
+    },
+    "test_metrics": {
+        "accuracy": 0.6956521739130435,
+        "macro_precision": 0.6597222222222222,
+        "macro_recall": 0.6455022005438287,
+        "macro_f1": 0.6511698862930836,
+        "high_risk_recall": 0.6521739130434783
+    },
+    "shap": {
+        "explainer": "TreeExplainer",
+        "output_space": "predicted probability",
+        "sample_size": 92,
+        "stability_folds": 5,
+        "stability_reference_size": 200,
+        "mean_pairwise_spearman": 0.8571428571428573,
+        "min_pairwise_spearman": 0.6571428571428573,
+        "max_pairwise_spearman": 1.0
+    },
+    "versions": {
+        "python": "3.12.10",
+        "scikit_learn": "1.9.1",
+        "xgboost": "3.4.1",
+        "shap": "0.52.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scipy": "1.18.1"
+    },
+    "limitations": [
+        "Clinical validity not established",
+        "Small dataset (451 records, 415 distinct feature vectors)",
+        "Exact duplicate rows removed (first occurrence kept)",
+        "35 feature vectors carry conflicting labels (accuracy ceiling 92.0%); handled with group-aware splits",
+        "Risk-label provenance of the UCI dataset is not documented",
+        "SHAP stability uses a fixed training reference sample"
+    ]
+}

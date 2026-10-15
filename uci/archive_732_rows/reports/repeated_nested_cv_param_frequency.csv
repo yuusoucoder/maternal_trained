@@ -1,0 +1,25 @@
+Model,Best Params,Times Selected
+Logistic Regression,"{""model__class_weight"": ""balanced"", ""model__C"": 0.01}",7
+Logistic Regression,"{""model__class_weight"": ""balanced"", ""model__C"": 1}",5
+Logistic Regression,"{""model__class_weight"": ""balanced"", ""model__C"": 0.1}",2
+Logistic Regression,"{""model__class_weight"": ""balanced"", ""model__C"": 10}",1
+Random Forest,"{""model__n_estimators"": 300, ""model__min_samples_leaf"": 4, ""model__max_depth"": 20, ""model__class_weight"": ""balanced""}",4
+Random Forest,"{""model__n_estimators"": 300, ""model__min_samples_leaf"": 4, ""model__max_depth"": 12, ""model__class_weight"": ""balanced""}",3
+Random Forest,"{""model__n_estimators"": 100, ""model__min_samples_leaf"": 2, ""model__max_depth"": 12, ""model__class_weight"": ""balanced""}",2
+Random Forest,"{""model__n_estimators"": 300, ""model__min_samples_leaf"": 2, ""model__max_depth"": 8, ""model__class_weight"": ""balanced""}",2
+Random Forest,"{""model__n_estimators"": 100, ""model__min_samples_leaf"": 1, ""model__max_depth"": 12, ""model__class_weight"": null}",1
+Random Forest,"{""model__n_estimators"": 200, ""model__min_samples_leaf"": 2, ""model__max_depth"": 12, ""model__class_weight"": ""balanced""}",1
+Random Forest,"{""model__n_estimators"": 200, ""model__min_samples_leaf"": 4, ""model__max_depth"": 20, ""model__class_weight"": ""balanced""}",1
+Random Forest,"{""model__n_estimators"": 200, ""model__min_samples_leaf"": 4, ""model__max_depth"": 8, ""model__class_weight"": ""balanced""}",1
+XGBoost,"{""model__subsample"": 0.8, ""model__n_estimators"": 200, ""model__max_depth"": 3, ""model__learning_rate"": 0.03, ""model__colsample_bytree"": 0.8}",2
+XGBoost,"{""model__subsample"": 0.8, ""model__n_estimators"": 300, ""model__max_depth"": 6, ""model__learning_rate"": 0.03, ""model__colsample_bytree"": 1.0}",2
+XGBoost,"{""model__subsample"": 1.0, ""model__n_estimators"": 100, ""model__max_depth"": 3, ""model__learning_rate"": 0.05, ""model__colsample_bytree"": 0.8}",2
+XGBoost,"{""model__subsample"": 0.8, ""model__n_estimators"": 100, ""model__max_depth"": 6, ""model__learning_rate"": 0.05, ""model__colsample_bytree"": 0.8}",1
+XGBoost,"{""model__subsample"": 0.8, ""model__n_estimators"": 200, ""model__max_depth"": 4, ""model__learning_rate"": 0.03, ""model__colsample_bytree"": 1.0}",1
+XGBoost,"{""model__subsample"": 0.8, ""model__n_estimators"": 200, ""model__max_depth"": 4, ""model__learning_rate"": 0.05, ""model__colsample_bytree"": 1.0}",1
+XGBoost,"{""model__subsample"": 0.8, ""model__n_estimators"": 300, ""model__max_depth"": 3, ""model__learning_rate"": 0.03, ""model__colsample_bytree"": 0.8}",1
+XGBoost,"{""model__subsample"": 1.0, ""model__n_estimators"": 100, ""model__max_depth"": 6, ""model__learning_rate"": 0.03, ""model__colsample_bytree"": 1.0}",1
+XGBoost,"{""model__subsample"": 1.0, ""model__n_estimators"": 200, ""model__max_depth"": 3, ""model__learning_rate"": 0.1, ""model__colsample_bytree"": 0.8}",1
+XGBoost,"{""model__subsample"": 1.0, ""model__n_estimators"": 200, ""model__max_depth"": 6, ""model__learning_rate"": 0.03, ""model__colsample_bytree"": 0.8}",1
+XGBoost,"{""model__subsample"": 1.0, ""model__n_estimators"": 200, ""model__max_depth"": 6, ""model__learning_rate"": 0.05, ""model__colsample_bytree"": 0.8}",1
+XGBoost,"{""model__subsample"": 1.0, ""model__n_estimators"": 300, ""model__max_depth"": 4, ""model__learning_rate"": 0.05, ""model__colsample_bytree"": 1.0}",1

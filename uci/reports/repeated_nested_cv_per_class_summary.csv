@@ -1,0 +1,10 @@
+Model,Class,Precision,Recall,F1,Mean Support
+Logistic Regression,low risk,0.7418 ± 0.0846,0.7023 ± 0.1407,0.7050 ± 0.0845,37.2
+Logistic Regression,mid risk,0.2563 ± 0.1072,0.2914 ± 0.1668,0.2617 ± 0.1215,16.8
+Logistic Regression,high risk,0.6831 ± 0.1006,0.6632 ± 0.0834,0.6645 ± 0.0494,17.8
+Random Forest,low risk,0.7511 ± 0.0733,0.8281 ± 0.1189,0.7777 ± 0.0312,37.2
+Random Forest,mid risk,0.4662 ± 0.1881,0.2662 ± 0.1365,0.3006 ± 0.1065,16.8
+Random Forest,high risk,0.7795 ± 0.0938,0.8100 ± 0.1025,0.7876 ± 0.0613,17.8
+XGBoost,low risk,0.7476 ± 0.0595,0.9067 ± 0.0635,0.8165 ± 0.0339,37.2
+XGBoost,mid risk,0.5541 ± 0.1863,0.2716 ± 0.1259,0.3413 ± 0.1225,16.8
+XGBoost,high risk,0.8181 ± 0.0837,0.7915 ± 0.1032,0.7987 ± 0.0630,17.8

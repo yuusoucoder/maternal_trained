@@ -1,0 +1,4 @@
+Model,High → Low,High → Mid,Total Missed High,Actual High
+Logistic Regression,28,3,31,89
+Random Forest,13,4,17,89
+XGBoost,12,6,18,89

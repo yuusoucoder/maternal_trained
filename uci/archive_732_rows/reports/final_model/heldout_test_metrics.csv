@@ -1,0 +1,2 @@
+Model,Test Records,Accuracy,Macro Precision,Macro Recall,Macro F1,High-Risk Recall,Actual High Risk,Correctly Detected High Risk,Missed High Risk
+Random Forest,147,0.6938775510204082,0.6825062421972534,0.6694104506604507,0.6407891551682401,0.8974358974358975,39,35,4

@@ -1,0 +1,16 @@
+Model,Metric,UCI nested CV (mean ± std),Mendeley nested CV (mean ± std)
+Logistic Regression,Accuracy,0.5961 ± 0.0542,0.5885 ± 0.0093
+Logistic Regression,Macro Precision,0.5604 ± 0.0599,
+Logistic Regression,Macro Recall,0.5523 ± 0.0378,
+Logistic Regression,Macro F1,0.5438 ± 0.0487,0.5802 ± 0.0098
+Logistic Regression,High-Risk Recall,0.6632 ± 0.0834,0.4657 ± 0.0208
+Random Forest,Accuracy,0.6918 ± 0.0341,0.9219 ± 0.0082
+Random Forest,Macro Precision,0.6656 ± 0.0618,
+Random Forest,Macro Recall,0.6348 ± 0.0360,
+Random Forest,Macro F1,0.6220 ± 0.0380,0.9215 ± 0.0083
+Random Forest,High-Risk Recall,0.8100 ± 0.1025,0.8670 ± 0.0182
+XGBoost,Accuracy,0.7288 ± 0.0365,0.9204 ± 0.0083
+XGBoost,Macro Precision,0.7066 ± 0.0709,
+XGBoost,Macro Recall,0.6566 ± 0.0464,
+XGBoost,Macro F1,0.6522 ± 0.0513,0.9199 ± 0.0085
+XGBoost,High-Risk Recall,0.7915 ± 0.1032,0.8525 ± 0.0249

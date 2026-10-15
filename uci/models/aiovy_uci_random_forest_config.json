@@ -1,0 +1,89 @@
+{
+    "model": "Random Forest",
+    "dataset": "Maternal_Health_Risk_no_duplicates.csv",
+    "dataset_records": 451,
+    "training_records": 359,
+    "locked_test_records": 92,
+    "features": [
+        "Age",
+        "SystolicBP",
+        "DiastolicBP",
+        "BS",
+        "BodyTemp",
+        "HeartRate"
+    ],
+    "feature_units": {
+        "Age": "years",
+        "SystolicBP": "mmHg",
+        "DiastolicBP": "mmHg",
+        "BS": "mmol/L",
+        "BodyTemp": "degF",
+        "HeartRate": "bpm"
+    },
+    "labels": [
+        "high risk",
+        "low risk",
+        "mid risk"
+    ],
+    "label_mapping": {
+        "high risk": 0,
+        "low risk": 1,
+        "mid risk": 2
+    },
+    "high_risk_class_code": 0,
+    "best_params": {
+        "model__n_estimators": 300,
+        "model__min_samples_leaf": 4,
+        "model__max_depth": 12,
+        "model__class_weight": "balanced"
+    },
+    "cv_high_risk_recall": 0.8313725490196079,
+    "cv_folds": 5,
+    "search_iterations": 10,
+    "smote_used": false,
+    "random_state": 42,
+    "grouping": "one group per distinct six-feature vector (pd.util.hash_pandas_object)",
+    "split": {
+        "method": "StratifiedGroupKFold(n_splits=5, shuffle=True), first fold = locked test",
+        "test_size": 0.2,
+        "random_state": 42,
+        "group_overlap": 0
+    },
+    "selection_rule": "Highest mean high-risk recall over the repeated nested CV outer folds (same rule as the Mendeley pipeline); ties at 4 decimals broken by mean macro F1.",
+    "repeated_nested_cv": {
+        "repeats": 3,
+        "outer_folds": 5,
+        "inner_folds": 3,
+        "mean": {
+            "Accuracy": 0.691771,
+            "Macro Precision": 0.665605,
+            "Macro Recall": 0.634772,
+            "Macro F1": 0.621967,
+            "High-Risk Recall": 0.810022
+        },
+        "std": {
+            "Accuracy": 0.034053,
+            "Macro Precision": 0.061838,
+            "Macro Recall": 0.036027,
+            "Macro F1": 0.037973,
+            "High-Risk Recall": 0.102496
+        }
+    },
+    "test_metrics": {
+        "accuracy": 0.6956521739130435,
+        "macro_precision": 0.6597222222222222,
+        "macro_recall": 0.6455022005438287,
+        "macro_f1": 0.6511698862930836,
+        "high_risk_recall": 0.6521739130434783
+    },
+    "versions": {
+        "python": "3.12.10",
+        "scikit_learn": "1.9.1",
+        "xgboost": "3.4.1",
+        "shap": "0.52.0",
+        "numpy": "2.5.4",
+        "pandas": "3.0.6",
+        "scipy": "1.18.1"
+    },
+    "created_at_utc": "2026-10-15T20:13:29.299502+00:00"
+}

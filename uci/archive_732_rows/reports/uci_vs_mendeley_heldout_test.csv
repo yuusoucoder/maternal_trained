@@ -1,0 +1,8 @@
+Metric,UCI,Mendeley
+Model,Random Forest,Random Forest
+Test Records,147,1213
+Accuracy,0.6939,0.9291
+Macro Precision,0.6825,
+Macro Recall,0.6694,
+Macro F1,0.6408,0.929
+High-Risk Recall,0.8974,0.8653

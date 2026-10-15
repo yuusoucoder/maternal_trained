@@ -1,0 +1,59 @@
+{
+    "selected_model": "Random Forest",
+    "rule": "Highest mean high-risk recall over the repeated nested CV outer folds (same rule as the Mendeley pipeline); ties at 4 decimals broken by mean macro F1.",
+    "runner_up": "XGBoost",
+    "paired_difference_vs_runner_up": {
+        "high_risk_recall_mean": 0.03649193548387096,
+        "high_risk_recall_std": 0.060654281826551644,
+        "folds_selected_better": 9,
+        "folds_tied": 2,
+        "macro_f1_mean": -0.027176575695612777
+    },
+    "nested_cv_means": {
+        "Random Forest": {
+            "Accuracy": 0.648446,
+            "Macro Precision": 0.623597,
+            "Macro Recall": 0.631594,
+            "Macro F1": 0.615679,
+            "High-Risk Recall": 0.799126
+        },
+        "XGBoost": {
+            "Accuracy": 0.681544,
+            "Macro Precision": 0.674753,
+            "Macro Recall": 0.653265,
+            "Macro F1": 0.642856,
+            "High-Risk Recall": 0.762634
+        },
+        "Logistic Regression": {
+            "Accuracy": 0.619916,
+            "Macro Precision": 0.617977,
+            "Macro Recall": 0.610336,
+            "Macro F1": 0.60689,
+            "High-Risk Recall": 0.710887
+        }
+    },
+    "nested_cv_stds": {
+        "Logistic Regression": {
+            "Accuracy": 0.062024,
+            "Macro Precision": 0.06046,
+            "Macro Recall": 0.066467,
+            "Macro F1": 0.065171,
+            "High-Risk Recall": 0.12019
+        },
+        "Random Forest": {
+            "Accuracy": 0.035329,
+            "Macro Precision": 0.058624,
+            "Macro Recall": 0.042141,
+            "Macro F1": 0.049838,
+            "High-Risk Recall": 0.067215
+        },
+        "XGBoost": {
+            "Accuracy": 0.036696,
+            "Macro Precision": 0.057672,
+            "Macro Recall": 0.040699,
+            "Macro F1": 0.04848,
+            "High-Risk Recall": 0.090659
+        }
+    },
+    "outer_evaluations_per_model": 15
+}

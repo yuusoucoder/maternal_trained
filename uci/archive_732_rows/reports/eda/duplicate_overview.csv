@@ -1,0 +1,9 @@
+,Value
+Records,732
+Exact duplicate rows (beyond first occurrence),281
+Distinct rows (feature + label),451
+Distinct feature vectors = groups,415
+Groups with more than one record,190
+Groups with conflicting labels,35
+Records in conflicting-label groups,136
+Largest group size,21

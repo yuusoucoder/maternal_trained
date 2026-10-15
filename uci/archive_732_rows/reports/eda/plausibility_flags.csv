@@ -1,0 +1,7 @@
+,Flagged records
+Age outside 10-60 (paper rule),7
+SystolicBP outside 60-250,0
+DiastolicBP outside 30-150,0
+SystolicBP <= DiastolicBP,0
+HeartRate outside 30-220,0
+BodyTemp outside 95-104 degF (paper rule),0
